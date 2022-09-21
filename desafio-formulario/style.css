@@ -5,22 +5,63 @@ body {
   min-height: 100vh;
   position: relative;
 }
-fieldset
+ .Dadospessoais fieldset
 {
-  width:400px;
+  width:550px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   
 
 }
 legend, label {
     font-family: 'Gill Sans', 'Gill Sans MT', 
     Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110%;
+    
   }
+h5 {
+  margin: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110%;}
 
 
-.flex input{
+  .Dadospessoais input{
     margin-bottom: 5px;
     left:95px;
     width:225px;
+}
+
+.Dadosprofissionais fieldset{
+ display: inline;
+ width:550px;
+
+}
+.Dadosprofissionais input{
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-top: 10px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+.caixa{
+  margin-top: 30px;
+  padding: 20px 100px;
+}
+
+.button input{
+border: 1px solid;
+padding: 3px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+position: relative;
+margin-left: 5px;
+margin-top: 20px;
 }
