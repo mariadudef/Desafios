@@ -1,9 +1,12 @@
+
+ 
 function comprarLeiteCondensado(){
     console.log('Joaozinho está indo na padaria ...')
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
-        const mensagen='Joaozinho retornou da padaria' ;
-        resolve(mensagen);
+        const mensagen='Joaozinho foi atropelado' ;
+        reject(mensagen);
+        
         }, 5000);
     });
  
@@ -26,4 +29,21 @@ function comprarLeiteCondensadoEfazendoBrigadeiroFetchAPI(){
     
 }
 
-comprarLeiteCondensadoEfazendoBrigadeiroFetchAPI();
+async function comprarLeiteCondensadoEfazendoBrigadeiroAsycWait(){
+    try{
+   const retorna = await comprarLeiteCondensado();
+   console.log(retorna);
+   fazendoBrigadeiro();
+    
+   }
+    catch(erro){
+        console.log(erro);
+
+    }
+    console.log('Script concluido')
+    
+
+}
+
+//comprarLeiteCondensadoEfazendoBrigadeiroFetchAPI();
+comprarLeiteCondensadoEfazendoBrigadeiroAsycWait()
